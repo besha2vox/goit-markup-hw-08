@@ -1,0 +1,39 @@
+body {
+	font-family: Roboto, $fontFamily;
+	background-color: $primaryBgc;
+	letter-spacing: 0.03em;
+}
+
+.section {
+	padding: 94px 0;
+}
+
+.nav {
+	display: inherit;
+	align-items: inherit;
+}
+
+.studio {
+	animation: changeStudio $transitionModal;
+}
+
+.portfolio {
+	animation: changePortfolio $transitionModal;
+}
+
+.link:hover {
+	color: $accentColor;
+}
+.link:focus {
+	color: $accentColor;
+}
+
+.title {
+	margin-bottom: 50px;
+	text-align: center;
+
+	color: $titleTextColor;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+}

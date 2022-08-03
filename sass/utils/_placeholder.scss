@@ -1,0 +1,29 @@
+%icon-centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+%btn {
+	padding-bottom: 10px;
+	padding-top: 10px;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+
+	color: $rareTextColor;
+	background-color: $accentColor;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-color: transparent;
+	border-radius: 4px;
+	border: none;
+	transition: $transitionBgc;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		background-color: $btnColor;
+	}
+}

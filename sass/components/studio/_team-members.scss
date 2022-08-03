@@ -1,0 +1,35 @@
+.members {
+	background-color: $tertiaryBgc;
+
+	&__list {
+		display: flex;
+		gap: $cardSetGap;
+	}
+	&__item {
+		border-radius: 0px 0px 4px 4px;
+		background-color: $primaryBgc;
+		box-shadow: $shadow;
+	}
+}
+
+.members-card {
+	padding: $cardSetGap 10px;
+
+	text-align: center;
+
+	&__name {
+		margin-bottom: 10px;
+
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.19;
+
+		color: $titleTextColor;
+	}
+
+	&__speciality {
+		margin-bottom: 16px;
+
+		color: $primaryTextColor;
+	}
+}

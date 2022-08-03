@@ -1,0 +1,34 @@
+.clients__title {
+	margin-bottom: 50px;
+}
+
+.clients-list {
+	display: flex;
+	gap: $cardSetGap;
+
+	&__icon {
+		display: inline-flex;
+		fill: currentColor;
+	}
+}
+
+.clients-list__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 170px;
+	height: 92px;
+
+	transition: $transitionColor, $transitionBorder;
+
+	color: $primaryIconColor;
+	border: 1px solid $primaryIconColor;
+	border-radius: 4px;
+
+	&:hover,
+	&:focus {
+		border: 1px solid $accentColor;
+		color: $accentColor;
+	}
+}

@@ -1,0 +1,42 @@
+.feature {
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: $cardSetGap;
+	}
+
+	&__item {
+		max-width: 270px;
+	}
+
+	&__icon-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: $cardSetGap;
+
+		width: 270px;
+		height: 120px;
+
+		background: $tertiaryBgc;
+		border-radius: 4px;
+	}
+
+	&__sub-title {
+		margin-bottom: 10px;
+
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.14;
+		text-transform: uppercase;
+
+		color: $titleTextColor;
+	}
+	&__discription {
+		list-style-type: none;
+		font-size: 14px;
+		line-height: 1.7;
+
+		color: $primaryTextColor;
+	}
+}

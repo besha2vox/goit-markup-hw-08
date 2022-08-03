@@ -1,0 +1,26 @@
+.address-thumb {
+	margin-right: 70px;
+}
+
+.address {
+	margin-top: 20px;
+	font-style: normal;
+}
+
+.address__list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 9px;
+}
+
+.address__link {
+	font-size: 14px;
+	line-height: 1.7;
+
+	color: $secondaryTextColor;
+	transition: $transitionColor;
+
+	&--white {
+		color: $rareTextColor;
+	}
+}
