@@ -1,0 +1,39 @@
+.menu-btn {
+	padding: 0;
+	z-index: 1;
+
+	background-color: transparent;
+	border: none;
+
+	&__icon--cross {
+		display: none;
+
+		.menu-btn.is-open & {
+			display: block;
+		}
+	}
+
+	&.is-open &__icon--menu {
+		display: none;
+	}
+	@media screen and (min-width: $tablet) {
+		display: none;
+	}
+}
+
+.menu-container {
+	@media screen and (max-width: 767px) {
+		position: absolute;
+		z-index: 1;
+		bottom: 100%;
+		left: 0;
+		padding: 48px 40px;
+		width: 100%;
+		background-color: #fff;
+		transition: $transitionTransform;
+
+		&.is-open {
+			transform: translateY(100%);
+		}
+	}
+}

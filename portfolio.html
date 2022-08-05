@@ -21,39 +21,61 @@
     <!-- Шапка -->
     <header class="page-header">
         <div class="page-header__container container">
-            <nav class="nav">
-                <a lang="en" class="logo page-header__logo" href="./index.html">
-                    <span class="logo__accent">Web</span>Studio</a>
-                <ul class="site-nav list">
-                    <li class="site-nav__item">
-                        <a class="site-nav__link link" href="./index.html">Студія</a>
+            <a lang="en" class="logo page-header__logo" href="./index.html">
+                <span class="logo__accent">Web</span>Studio</a>
+            <button class="menu-btn" data-menu-button>
+                <svg class="menu-btn__icons" width="40" height="40" aria-label="Перемикач мобільного меню">
+                    <use class="menu-btn__icon--cross" href="./img/svg/symbol-defs.svg#icon-cross"></use>
+                    <use class="menu-btn__icon--menu" href="./img/svg/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="menu-container" data-menu>
+                <nav class="nav">
+                    <ul class="site-nav list">
+                        <li class="site-nav__item">
+                            <a class="site-nav__link link" href="./index.html">Студія</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link link site-nav__link--current" href="./portfolio.html">Портфоліо</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link link" href="#contacts">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="contacts-list list">
+                    <li class="contacts-list__item">
+                        <a class="contacts-list__link link" href="mailto:info@example.com">
+                            <svg width="16" height="12" class="contacts-list__icon">
+                                <use href="./img/svg/symbol-defs.svg#icon-header-mail"></use>
+                            </svg>
+                            info@example.com
+                        </a>
                     </li>
-                    <li class="site-nav__item">
-                        <a class="site-nav__link link site-nav__link--current" href="./portfolio.html">Портфоліо</a>
-                    </li>
-                    <li class="site-nav__item">
-                        <a class="site-nav__link link" href="#contacts">Контакти</a>
+                    <li class="contacts-list__item">
+                        <a class="contacts-list__link contacts-list__link--accent link" href="tel:+380991111111">
+                            <svg width="10" height="16" class="contacts-list__icon">
+                                <use href="./img/svg/symbol-defs.svg#icon-header-smartphone"></use>
+                            </svg>
+                            +38 099 111 11 11
+                        </a>
                     </li>
                 </ul>
-            </nav>
-            <ul class="contacts-list list">
-                <li class="contacts-list__item">
-                    <a class="contacts-list__link link" href="mailto:info@example.com">
-                        <svg width="16" height="12" class="contacts-list__icon">
-                            <use href="./img/svg/symbol-defs.svg#icon-header-mail"></use>
-                        </svg>
-                        info@example.com
-                    </a>
-                </li>
-                <li class="contacts-list__item">
-                    <a class="contacts-list__link link" href="tel:+380991111111">
-                        <svg width="10" height="16" class="contacts-list__icon">
-                            <use href="./img/svg/symbol-defs.svg#icon-header-smartphone"></use>
-                        </svg>
-                        +38 099 111 11 11
-                    </a>
-                </li>
-            </ul>
+                <ul class="mobile-soc list">
+                    <li class="mobile-soc__item">
+                        <a href="" class="mobile-soc__link link">Instagram</a>
+                    </li>
+                    <li class="mobile-soc__item">
+                        <a href="" class="mobile-soc__link link">Twitter</a>
+                    </li>
+                    <li class="mobile-soc__item">
+                        <a href="" class="mobile-soc__link link">Facebook</a>
+                    </li>
+                    <li class="mobile-soc__item">
+                        <a href="" class="mobile-soc__link link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <!-- MAIN  -->
@@ -293,6 +315,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

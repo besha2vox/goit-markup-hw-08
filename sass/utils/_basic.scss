@@ -8,11 +8,6 @@ body {
 	padding: 60px 0;
 }
 
-.nav {
-	display: inherit;
-	align-items: inherit;
-}
-
 // .studio {
 // 	animation: changeStudio $transitionModal;
 // }
@@ -45,4 +40,8 @@ body {
 	// font-weight: 700;
 	// font-size: 36px;
 	// line-height: 1.17;
+}
+
+body.modal-open {
+	overflow: hidden;
 }
