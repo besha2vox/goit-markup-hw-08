@@ -1,12 +1,14 @@
 .page-footer {
 	padding: 60px 0;
 
+	text-align: center;
+
 	background-color: $secondaryBgc;
 }
 
 .page-footer__container {
-	display: flex;
-	align-items: baseline;
+	// display: flex;
+	// align-items: baseline;
 }
 .page-footer__text {
 	display: block;
@@ -16,10 +18,12 @@
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
-
 	color: $rareTextColor;
 }
 
 .social-networks-thumb {
-	margin-right: auto;
+	@media screen and (max-width: 767px) {
+		margin-bottom: 60px;
+	}
+	// margin-right: auto;
 }

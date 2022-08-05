@@ -1,35 +1,55 @@
 .members {
 	background-color: $tertiaryBgc;
+}
 
-	&__list {
-		display: flex;
-		gap: $cardSetGap;
-	}
-	&__item {
-		border-radius: 0px 0px 4px 4px;
-		background-color: $primaryBgc;
-		box-shadow: $shadow;
+// .members__list {
+// 	display: flex;
+// 	gap: $cardSetGap;
+// }
+
+.members__item {
+	border-radius: 0px 0px 4px 4px;
+	background-color: $primaryBgc;
+	box-shadow: $shadow;
+
+	&:not(:last-child) {
+		@media screen and (max-width: 767px) {
+			margin-bottom: $cardSetGap;
+		}
 	}
 }
 
+.members__item img {
+	width: 100%;
+}
+
 .members-card {
-	padding: $cardSetGap 10px;
+	padding: $cardSetGap 10px 24px;
 
+	font-size: 16px;
+	line-height: 1.19;
 	text-align: center;
+	// 	padding: $cardSetGap 10px;
+}
 
-	&__name {
-		margin-bottom: 10px;
+.members-card__name {
+	margin-bottom: 10px;
 
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 1.19;
+	font-weight: 500;
 
-		color: $titleTextColor;
-	}
+	color: $titleTextColor;
 
-	&__speciality {
-		margin-bottom: 16px;
+	// 	margin-bottom: 10px;
 
-		color: $primaryTextColor;
-	}
+	// 	font-weight: 500;
+	// 	font-size: 16px;
+	// 	line-height: 1.19;
+}
+
+.members-card__speciality {
+	margin-bottom: 16px;
+
+	color: $primaryTextColor;
+
+	// margin-bottom: 16px;
 }

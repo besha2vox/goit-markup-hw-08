@@ -1,21 +1,23 @@
 .address-thumb {
-	margin-right: 70px;
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 60px;
+	}
+	// margin-right: 70px;
 }
 
 .address {
 	margin-top: 20px;
-	font-style: normal;
 }
 
 .address__list {
 	display: flex;
 	flex-direction: column;
-	row-gap: 9px;
+	row-gap: 8px;
 }
 
 .address__link {
 	font-size: 14px;
-	line-height: 1.7;
+	line-height: 1.71;
 
 	color: $secondaryTextColor;
 	transition: $transitionColor;

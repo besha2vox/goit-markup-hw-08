@@ -1,24 +1,27 @@
 .subscription-form__wrapper {
-	display: flex;
+	// display: flex;
 }
 
 .subscription-form__input {
 	display: block;
-	margin-right: 12px;
-	padding: 14px 16px;
+	padding: 15px 16px;
 
-	min-width: 358px;
+	min-width: 100%;
+	max-width: 480px;
 
 	font-size: 16px;
 	line-height: 1.25;
 	letter-spacing: 0.03em;
-
 	color: $secondaryTextColor;
 	background-color: transparent;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
 	transition: $transitionBorder;
+
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 20px;
+	}
 
 	&::placeholder {
 		font-size: 16px;
@@ -36,7 +39,7 @@
 
 .subscription-form__submit {
 	@extend %btn;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	padding-left: 28px;
 	padding-right: 28px;

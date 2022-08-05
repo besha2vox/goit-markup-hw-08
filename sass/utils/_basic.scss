@@ -5,7 +5,7 @@ body {
 }
 
 .section {
-	padding: 94px 0;
+	padding: 60px 0;
 }
 
 .nav {
@@ -13,13 +13,13 @@ body {
 	align-items: inherit;
 }
 
-.studio {
-	animation: changeStudio $transitionModal;
-}
+// .studio {
+// 	animation: changeStudio $transitionModal;
+// }
 
-.portfolio {
-	animation: changePortfolio $transitionModal;
-}
+// .portfolio {
+// 	animation: changePortfolio $transitionModal;
+// }
 
 .link:hover {
 	color: $accentColor;
@@ -29,11 +29,20 @@ body {
 }
 
 .title {
-	margin-bottom: 50px;
+	margin-bottom: $cardSetGap;
+
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 1.18;
 	text-align: center;
 
 	color: $titleTextColor;
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.17;
+
+	// margin-bottom: 50px;
+	// text-align: center;
+
+	// color: $titleTextColor;
+	// font-weight: 700;
+	// font-size: 36px;
+	// line-height: 1.17;
 }
