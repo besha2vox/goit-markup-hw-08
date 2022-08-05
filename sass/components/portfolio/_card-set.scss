@@ -1,14 +1,15 @@
 .card-set {
-	display: flex;
-	flex-wrap: wrap;
-	margin-right: calc(-1 * $cardSetGap);
-	margin-bottom: calc(-1 * $cardSetGap);
+	// display: flex;
+	// flex-wrap: wrap;
+	// margin-right: calc(-1 * $cardSetGap);
+	// margin-bottom: calc(-1 * $cardSetGap);
 }
 
 .card-set__item {
-	flex-basis: calc(100% / 3 - $cardSetGap);
-	margin-right: $cardSetGap;
-	margin-bottom: $cardSetGap;
+	// max-width: 450px;
+	// flex-basis: calc(100% / 3 - $cardSetGap);
+	// margin-right: $cardSetGap;
+	// margin-bottom: $cardSetGap;
 }
 
 .card-set__link {
