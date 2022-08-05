@@ -918,7 +918,9 @@ body.modal-open {
 }
 
 .checkbox-wrapper {
+  display: flex;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 1200px) {
   .checkbox-wrapper {
@@ -951,6 +953,8 @@ body.modal-open {
 }
 
 .checkbox-wrapper__link {
+  font-size: 12px;
+  line-height: 1.17;
   color: #2196f3;
 }
 

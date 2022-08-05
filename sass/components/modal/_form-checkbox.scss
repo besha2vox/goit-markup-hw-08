@@ -1,5 +1,7 @@
 .checkbox-wrapper {
+	display: flex;
 	margin-bottom: 30px;
+	flex-wrap: wrap;
 
 	@media screen and (min-width: $desktop) {
 		padding: 0 12px;
@@ -32,6 +34,9 @@
 }
 
 .checkbox-wrapper__link {
+	font-size: 12px;
+	line-height: 1.17;
+
 	color: $accentColor;
 }
 
