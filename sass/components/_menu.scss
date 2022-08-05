@@ -27,7 +27,6 @@
 		z-index: 1;
 		bottom: 100%;
 		left: 0;
-		padding: 48px 40px;
 		width: 100%;
 		background-color: #fff;
 		transition: $transitionTransform;
@@ -35,6 +34,13 @@
 
 		&.is-open {
 			transform: translateY(100%);
+
+			@media screen and (max-width: 439px) {
+				padding: 48px 10px;
+			}
+			@media screen and (min-width: 439px) and (max-width: 767px) {
+				padding: 48px 40px;
+			}
 		}
 	}
 }
