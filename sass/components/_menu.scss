@@ -29,7 +29,6 @@
 		z-index: 1;
 		bottom: 100%;
 		left: 0;
-		padding: 48px 40px;
 
 		width: 100%;
 		min-height: 100vh;
@@ -39,6 +38,18 @@
 
 		&.is-open {
 			transform: translateY(100%);
+		}
+
+		@media screen and (max-width: 429px) {
+			padding: 40px 20px;
+		}
+
+		@media screen and (min-width: 430px) and (max-width: 439px) {
+			padding: 40px 30px;
+		}
+
+		@media screen and (min-width: 440px) and (max-width: 767px) {
+			padding: 48px 40px;
 		}
 	}
 }
