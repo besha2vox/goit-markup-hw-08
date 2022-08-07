@@ -1,20 +1,22 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: Roboto, $fontFamily;
 	background-color: $primaryBgc;
 	letter-spacing: 0.03em;
 }
 
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
 .section {
 	padding: 60px 0;
 }
-
-// .studio {
-// 	animation: changeStudio $transitionModal;
-// }
-
-// .portfolio {
-// 	animation: changePortfolio $transitionModal;
-// }
 
 .link:hover {
 	color: $accentColor;

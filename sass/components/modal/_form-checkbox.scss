@@ -40,7 +40,9 @@
 }
 
 .checkbox-wrapper__icon {
-	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	margin-right: 8px;
 
 	width: 16px;
@@ -48,15 +50,6 @@
 	border: 2px solid $formIconColor;
 	border-radius: 2px;
 	transition: $transitionBgc, $transitionBorder;
-
-	&--checked {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-
-		border-color: transparent;
-	}
 
 	.checkbox-wrapper__checkbox:checked + & {
 		background-color: $accentColor;
