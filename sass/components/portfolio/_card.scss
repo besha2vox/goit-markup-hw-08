@@ -34,7 +34,7 @@
 
 .card__text {
 	position: absolute;
-	padding: 63px 24px;
+	padding: 77px 24px;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -52,5 +52,9 @@
 	.card-set__link:hover &,
 	.card-set__link:focus & {
 		transform: translateY(0);
+	}
+
+	@media screen and (min-width: $tablet) {
+		padding: 63px 24px;
 	}
 }
