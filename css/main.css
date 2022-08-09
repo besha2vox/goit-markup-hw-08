@@ -937,7 +937,7 @@ body.modal-open {
 
 .card__text {
   position: absolute;
-  padding: 63px 24px;
+  padding: 77px 24px;
   top: 0;
   left: 0;
   width: 100%;
@@ -952,6 +952,11 @@ body.modal-open {
 }
 .card-set__link:hover .card__text, .card-set__link:focus .card__text {
   transform: translateY(0);
+}
+@media screen and (min-width: 768px) {
+  .card__text {
+    padding: 63px 24px;
+  }
 }
 
 .page-footer {
