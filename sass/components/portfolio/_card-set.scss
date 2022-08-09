@@ -25,7 +25,10 @@
 }
 
 .card-set__link {
-	display: block;
+	display: flex;
+	flex-direction: column;
+
+	height: 100%;
 
 	transition: $transitionBoxShadow;
 
