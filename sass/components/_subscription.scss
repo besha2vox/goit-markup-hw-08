@@ -1,5 +1,17 @@
+.subscription-thumb {
+	@media screen and (min-width: $tablet) {
+		width: 450px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: auto;
+	}
+}
+
 .subscription-form__wrapper {
-	// display: flex;
+	@media screen and (min-width: $desktop) {
+		display: flex;
+	}
 }
 
 .subscription-form__input {
@@ -21,6 +33,11 @@
 
 	@media screen and (max-width: 1199px) {
 		margin-bottom: 20px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		margin-right: 12px;
+		min-width: 358px;
 	}
 
 	&::placeholder {

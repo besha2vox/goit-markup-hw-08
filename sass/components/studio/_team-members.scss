@@ -2,10 +2,14 @@
 	background-color: $tertiaryBgc;
 }
 
-// .members__list {
-// 	display: flex;
-// 	gap: $cardSetGap;
-// }
+.members__list {
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: $cardSetGap;
+	}
+}
 
 .members__item {
 	border-radius: 0px 0px 4px 4px;
@@ -16,6 +20,14 @@
 		@media screen and (max-width: 767px) {
 			margin-bottom: $cardSetGap;
 		}
+	}
+
+	@media screen and (min-width: $tablet) {
+		max-width: calc((100% - 30px) / 2);
+	}
+
+	@media screen and (min-width: $desktop) {
+		max-width: calc((100% - 30px * 3) / 4);
 	}
 }
 
@@ -29,27 +41,24 @@
 	font-size: 16px;
 	line-height: 1.19;
 	text-align: center;
-	// 	padding: $cardSetGap 10px;
+
+	@media screen and (min-width: $desktop) {
+		padding: $cardSetGap 10px;
+	}
 }
 
 .members-card__name {
 	margin-bottom: 10px;
 
 	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
 
 	color: $titleTextColor;
-
-	// 	margin-bottom: 10px;
-
-	// 	font-weight: 500;
-	// 	font-size: 16px;
-	// 	line-height: 1.19;
 }
 
 .members-card__speciality {
 	margin-bottom: 16px;
 
 	color: $primaryTextColor;
-
-	// margin-bottom: 16px;
 }

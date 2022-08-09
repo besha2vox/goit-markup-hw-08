@@ -2,7 +2,16 @@
 	@media screen and (max-width: 1199px) {
 		margin-bottom: 60px;
 	}
-	// margin-right: 70px;
+
+	@media screen and (min-width: $tablet) {
+		width: calc(100% / 2);
+	}
+
+	@media screen and (min-width: $desktop) {
+		margin-right: 70px;
+		width: auto;
+		text-align: start;
+	}
 }
 
 .address {

@@ -1,8 +1,24 @@
+.social-networks-thumb {
+	@media screen and (max-width: 767px) {
+		margin-bottom: 60px;
+	}
+
+	@media screen and (min-width: $tablet) {
+		width: calc(100% / 2);
+	}
+
+	@media screen and (min-width: $desktop) {
+		margin-right: auto;
+		width: auto;
+	}
+}
+
 .social-networks {
 	display: flex;
 	justify-content: center;
 	gap: 10px;
 }
+
 .social-networks__icon {
 	display: inline-flex;
 	fill: currentColor;

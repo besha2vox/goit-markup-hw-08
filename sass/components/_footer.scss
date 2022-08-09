@@ -7,9 +7,14 @@
 }
 
 .page-footer__container {
-	// display: flex;
-	// align-items: baseline;
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: center;
+	}
 }
+
 .page-footer__text {
 	display: block;
 	margin-bottom: 20px;
@@ -19,11 +24,8 @@
 	line-height: 1.14;
 	text-transform: uppercase;
 	color: $rareTextColor;
-}
 
-.social-networks-thumb {
-	@media screen and (max-width: 767px) {
-		margin-bottom: 60px;
+	@media screen and (min-width: $desktop) {
+		text-align: start;
 	}
-	// margin-right: auto;
 }

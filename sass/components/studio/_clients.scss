@@ -13,7 +13,11 @@
 .clients-list__item {
 	flex-basis: calc((100% - 30px) / 2);
 	@media screen and (min-width: $tablet) {
-		flex-basis: calc((100% - 60px) / 3);
+		flex-basis: calc((100% - 30px * 2) / 3);
+	}
+
+	@media screen and (min-width: $desktop) {
+		flex-basis: calc((100% - 30px * 5) / 6);
 	}
 }
 
