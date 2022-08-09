@@ -1,18 +1,27 @@
 .card-set {
 	margin-bottom: -30px;
-	// display: flex;
-	// flex-wrap: wrap;
-	// margin-right: calc(-1 * $cardSetGap);
-	// margin-bottom: calc(-1 * $cardSetGap);
+
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: calc(-1 * $cardSetGap);
+		margin-bottom: calc(-1 * $cardSetGap);
+	}
 }
 
 .card-set__item {
 	margin-bottom: 30px;
 	max-width: 450px;
 
-	// flex-basis: calc(100% / 3 - $cardSetGap);
-	// margin-right: $cardSetGap;
-	// margin-bottom: $cardSetGap;
+	@media screen and (min-width: $tablet) {
+		max-width: calc(100% / 2 - $cardSetGap);
+		margin-right: $cardSetGap;
+		margin-bottom: $cardSetGap;
+	}
+
+	@media screen and (min-width: $desktop) {
+		max-width: calc(100% / 3 - $cardSetGap);
+	}
 }
 
 .card-set__link {
