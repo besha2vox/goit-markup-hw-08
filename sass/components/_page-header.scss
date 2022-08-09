@@ -1,17 +1,10 @@
 .page-header {
 	background-color: $primaryBgc;
+	border-bottom: $headerBorder;
 	@media screen and (max-width: 767px) {
 		position: relative;
 		padding: 10px 0;
 	}
-}
-
-.page-header {
-	// font-weight: 500;
-	// font-size: 14px;
-	// line-height: 1.14;
-
-	border-bottom: $headerBorder;
 }
 
 .page-header__container {
@@ -23,7 +16,12 @@
 	}
 }
 
-// .page-header__container {
-// 	display: flex;
-// 	align-items: center;
-// }
+.menu-container {
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+
+		width: 100%;
+	}
+}

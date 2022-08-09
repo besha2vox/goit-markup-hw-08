@@ -15,7 +15,18 @@
 		color: $rareTextColor;
 	}
 
-	// &.page-header__logo {
-	// 	margin-right: 93px;
-	// }
+	@media screen and (min-width: $tablet) {
+		&.page-header__logo {
+			margin-right: 87px;
+		}
+	}
+
+	@media screen and (min-width: $desktop) {
+		font-size: 26px;
+		line-height: 31px;
+
+		&.page-header__logo {
+			margin-right: 93px;
+		}
+	}
 }

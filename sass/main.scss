@@ -13,7 +13,8 @@
 @import "./components/logo.scss";
 // header
 @import "./components/page-header";
-@import "./components/menu";
+@import "./components/mobile-menu/menu";
+@import "./components/mobile-menu/mobile-soc";
 @import "./components/site-nav";
 @import "./components/header-contacts";
 // STTUDIO
