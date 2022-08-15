@@ -24,7 +24,7 @@
         <div class="page-header__container container">
             <a lang="en" class="logo page-header__logo" href="./index.html">
                 <span class="logo__accent">Web</span>Studio</a>
-            <button class="menu-btn" data-menu-button>
+            <button class="menu-btn" aria-expanded="false" data-menu-button>
                 <svg class="menu-btn__icons" width="40" height="40" aria-label="Перемикач мобільного меню">
                     <use class="menu-btn__icon--cross" href="./img/svg/symbol-defs.svg#icon-cross"></use>
                     <use class="menu-btn__icon--menu" href="./img/svg/symbol-defs.svg#icon-menu"></use>
@@ -176,12 +176,18 @@
         <!-- Команда  -->
         <section class="section members">
             <div class="container">
-                <h2 class="members_title title">Наша команда</h2>
+                <h2 class="members__title title">Наша команда</h2>
                 <ul class="members__list list">
                     <li class="members__item">
-                        <img width="270"
-                            srcset="./img/bitmap/members/team_card_1.jpg 1x, ./img/bitmap/members/team_card_1@2x.jpg 2x"
-                            src="./img/bitmap/members/team_card_1.jpg" alt="Фото Ігора Дем'яненко" />
+                        <picture>
+                            <source type="image/jpeg" media="(max-width: 767px)" srcset="./img/bitmap/members/mobile/member-1-450.jpg 450w,
+                            ./img/bitmap/members/mobile/member-1-900.jpg 900w" />
+                            <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)" srcset="./img/bitmap/members/tablet/member-1-354.jpg 354w,
+                            ./img/bitmap/members/tablet/member-1-708.jpg 708w" />
+                            <source type="image/jpeg" media="(min-width: 1200px)" srcset="./img/bitmap/members/desktop/member-1-270.jpg 270w,
+                            ./img/bitmap/members/desktop/member-1-540.jpg 540w" />
+                            <img width="270" src="./img/bitmap/members/team_card_1.jpg" alt="Фото Ігора Дем'яненко" />
+                        </picture>
                         <div class="members-card">
                             <h3 class="members-card__name">Ігор Дем'яненко</h3>
                             <p lang="en" class="members-card__speciality">Product Designer</p>
@@ -219,9 +225,15 @@
                         </div>
                     </li>
                     <li class="members__item">
-                        <img width="270"
-                            srcset="./img/bitmap/members/team_card_2.jpg 1x, ./img/bitmap/members/team_card_2@2x.jpg 2x"
-                            src="./img/bitmap/members/team_card_2.jpg" alt="Фото Ольги Репіної" />
+                        <picture>
+                            <source type="image/jpeg" media="(max-width: 767px)" srcset="./img/bitmap/members/mobile/member-2-450.jpg 450w,
+                            ./img/bitmap/members/mobile/member-2-900.jpg 900w" />
+                            <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)" srcset="./img/bitmap/members/tablet/member-2-354.jpg 354w,
+                            ./img/bitmap/members/tablet/member-2-708.jpg 708w" />
+                            <source type="image/jpeg" media="(min-width: 1200px)" srcset="./img/bitmap/members/desktop/member-2-270.jpg 270w,
+                            ./img/bitmap/members/desktop/member-2-540.jpg 540w" />
+                            <img width="270" src="./img/bitmap/members/team_card_2.jpg" alt="Фото Ольги Рєпіної" />
+                        </picture>
                         <div class="members-card">
                             <h3 class="members-card__name">Ольга Рєпіна</h3>
                             <p lang="en" class="members-card__speciality">Frontend Developer</p>
@@ -259,9 +271,15 @@
                         </div>
                     </li>
                     <li class="members__item">
-                        <img width="270"
-                            srcset="./img/bitmap/members/team_card_3.jpg 1x, ./img/bitmap/members/team_card_3@2x.jpg 2x"
-                            src="./img/bitmap/members/team_card_3.jpg" alt="Фото Миколая Тарасова" />
+                        <picture>
+                            <source type="image/jpeg" media="(max-width: 767px)" srcset="./img/bitmap/members/mobile/member-3-450.jpg 450w,
+                            ./img/bitmap/members/mobile/member-3-900.jpg 900w" />
+                            <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)" srcset="./img/bitmap/members/tablet/member-3-354.jpg 354w,
+                            ./img/bitmap/members/tablet/member-3-708.jpg 708w" />
+                            <source type="image/jpeg" media="(min-width: 1200px)" srcset="./img/bitmap/members/desktop/member-3-270.jpg 270w,
+                            ./img/bitmap/members/desktop/member-3-540.jpg 540w" />
+                            <img width="270" src="./img/bitmap/members/team_card_3.jpg" alt="Фото Миколи Тарасова" />
+                        </picture>
                         <div class="members-card">
                             <h3 class="members-card__name">Микола Тарасов</h3>
                             <p lang="en" class="members-card__speciality">Marketing</p>
@@ -299,9 +317,15 @@
                         </div>
                     </li>
                     <li class="members__item">
-                        <img width="270"
-                            srcset="./img/bitmap/members/team_card_4.jpg 1x, ./img/bitmap/members/team_card_4@2x.jpg 2x"
-                            src="./img/bitmap/members/team_card_4.jpg" alt="Фото Михайла Єрмакова" />
+                        <picture>
+                            <source type="image/jpeg" media="(max-width: 767px)" srcset="./img/bitmap/members/mobile/member-4-450.jpg 450w,
+                            ./img/bitmap/members/mobile/member-4-900.jpg 900w" />
+                            <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)" srcset="./img/bitmap/members/tablet/member-4-354.jpg 354w,
+                            ./img/bitmap/members/tablet/member-4-708.jpg 708w" />
+                            <source type="image/jpeg" media="(min-width: 1200px)" srcset="./img/bitmap/members/desktop/member-4-270.jpg 270w,
+                            ./img/bitmap/members/desktop/member-4-540.jpg 540w" />
+                            <img width="270" src="./img/bitmap/members/team_card_4.jpg" alt="Фото Михайла Єрмакова" />
+                        </picture>
                         <div class="members-card">
                             <h3 class="members-card__name">Михайло Єрмаков</h3>
                             <p lang="en" class="members-card__speciality">UI Designer</p>

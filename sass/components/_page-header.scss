@@ -1,8 +1,11 @@
 .page-header {
 	background-color: $primaryBgc;
 	border-bottom: $headerBorder;
+
 	@media screen and (max-width: 767px) {
-		position: relative;
+		position: fixed;
+		z-index: 1;
+		width: 100%;
 		padding: 10px 0;
 	}
 }
