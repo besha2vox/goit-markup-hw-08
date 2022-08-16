@@ -1,16 +1,18 @@
 .contacts-list {
+	display: flex;
 	@media screen and (max-width: 767px) {
-		display: flex;
 		flex-direction: column-reverse;
 		margin: 64px 0;
 	}
 
 	@media screen and (min-width: $tablet) {
+		flex-direction: column;
+		gap: 10px;
 		margin-left: auto;
 	}
 
 	@media screen and (min-width: $desktop) {
-		display: flex;
+		flex-direction: row;
 		gap: 50px;
 	}
 }
