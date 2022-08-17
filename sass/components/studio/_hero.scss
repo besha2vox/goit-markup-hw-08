@@ -83,7 +83,5 @@
 }
 
 .hero__btn {
-	@extend %btn;
-	padding-left: 24px;
-	padding-right: 24px;
+	@include btn(24px);
 }

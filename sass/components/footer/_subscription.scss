@@ -55,11 +55,9 @@
 }
 
 .subscription-form__submit {
-	@extend %btn;
 	display: inline-flex;
 	align-items: center;
-	padding-left: 28px;
-	padding-right: 28px;
+	@include btn(28px);
 }
 
 .subscription-form__icon {
