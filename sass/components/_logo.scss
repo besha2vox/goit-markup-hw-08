@@ -5,28 +5,30 @@
 	line-height: 1.19;
 
 	text-decoration: none;
-	color: #000000;
+
+	&--black {
+		color: $logoBlack;
+	}
+	&--white {
+		color: $logoWhite;
+	}
 
 	&__accent {
 		color: $accentColor;
-	}
-
-	&.footer__logo {
-		color: $rareTextColor;
 	}
 
 	@media screen and (min-width: $tablet) {
 		&.page-header__logo {
 			margin-right: 87px;
 		}
-	}
 
-	@media screen and (min-width: $desktop) {
-		font-size: 26px;
-		line-height: 31px;
+		@media screen and (min-width: $desktop) {
+			font-size: 26px;
+			line-height: 31px;
 
-		&.page-header__logo {
-			margin-right: 93px;
+			&.page-header__logo {
+				margin-right: 93px;
+			}
 		}
 	}
 }
