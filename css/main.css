@@ -203,20 +203,22 @@ body.modal-open {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+}
+.logo--black {
   color: #000000;
+}
+.logo--white {
+  color: #ffffff;
 }
 .logo__accent {
   color: #2196f3;
-}
-.logo.footer__logo {
-  color: #ffffff;
 }
 @media screen and (min-width: 768px) {
   .logo.page-header__logo {
     margin-right: 87px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: 31px;
