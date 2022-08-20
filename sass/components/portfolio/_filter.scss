@@ -2,7 +2,11 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 50px;
-	gap: 8px;
+	column-gap: 8px;
+
+	@media screen and (max-width: 767px) {
+		row-gap: 15px;
+	}
 
 	@media screen and (min-width: $tablet) {
 		justify-content: center;
