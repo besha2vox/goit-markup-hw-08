@@ -200,8 +200,8 @@ body.modal-open {
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   text-decoration: none;
 }
 .logo--black {
@@ -221,7 +221,7 @@ body.modal-open {
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .logo {
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
   }
   .logo.page-header__logo {
     margin-right: 93px;
@@ -229,14 +229,15 @@ body.modal-open {
 }
 
 .page-header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
 @media screen and (max-width: 767px) {
   .page-header {
-    position: fixed;
-    z-index: 1;
-    width: 100%;
     padding: 10px 0;
   }
 }
@@ -274,6 +275,7 @@ body.modal-open {
 .menu-btn {
   padding: 0;
   z-index: 2;
+  height: 40px;
   background-color: transparent;
   border: none;
 }
