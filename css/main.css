@@ -258,8 +258,14 @@ body.modal-open {
   }
 }
 
+.menu {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 @media screen and (min-width: 768px) {
-  .menu-container {
+  .menu__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -295,15 +301,8 @@ body.modal-open {
 }
 
 @media screen and (max-width: 767px) {
-  .menu-container {
+  .menu {
     position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     z-index: 1;
     top: 0;
     left: 0;
@@ -322,27 +321,39 @@ body.modal-open {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-bottom: 1px solid #ececec;
   }
-  .menu-container.is-open {
+  .menu.is-open {
     opacity: 1;
     pointer-events: all;
     overflow: auto;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+  .menu__container {
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 767px) and (max-width: 429px) {
-  .menu-container {
-    padding: 40px 20px;
+  .menu {
+    padding: 40px 0;
+  }
+  .menu .menu__container {
+    padding: 0 20px;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 430px) and (max-width: 439px) {
-  .menu-container {
-    padding: 40px 30px;
+  .menu {
+    padding: 40px 0;
+  }
+  .menu .menu__container {
+    padding: 0 30px;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 440px) and (max-width: 767px) {
-  .menu-container {
-    padding: 48px 40px;
+  .menu {
+    padding: 48px 0;
+  }
+  .menu .menu__container {
+    padding: 0 40px;
   }
 }
 
