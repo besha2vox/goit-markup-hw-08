@@ -329,8 +329,15 @@ body.modal-open {
             transform: translateY(0);
   }
   .menu__container {
-    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0 auto;
+    height: 100%;
   }
 }
 @media screen and (max-width: 767px) and (max-width: 429px) {
