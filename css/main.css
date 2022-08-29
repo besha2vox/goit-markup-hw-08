@@ -329,6 +329,7 @@ body.modal-open {
             transform: translateY(0);
   }
   .menu__container {
+    height: 100%;
     margin: 0 auto;
   }
 }
@@ -348,7 +349,7 @@ body.modal-open {
     padding: 0 30px;
   }
 }
-@media screen and (max-width: 767px) and (min-width: 440px) and (max-width: 767px) {
+@media screen and (max-width: 767px) and (min-width: 440px) {
   .menu {
     padding: 48px 0;
   }
